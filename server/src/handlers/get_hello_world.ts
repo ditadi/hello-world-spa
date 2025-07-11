@@ -1,11 +1,10 @@
 
-import { type Greeting } from '../schema';
+import { type HelloWorld } from '../schema';
 
-export async function getHelloWorld(): Promise<Greeting> {
-    // This is a placeholder declaration! Real code should be implemented here.
-    // The goal of this handler is returning a simple "Hello World" greeting.
-    return Promise.resolve({
-        message: "Hello World",
-        timestamp: new Date()
-    } as Greeting);
+export async function getHelloWorld(): Promise<HelloWorld> {
+  // This handler returns a simple "Hello World" message
+  // Purpose: Provide a basic greeting response for the frontend
+  return {
+    message: "Hello World"
+  };
 }
